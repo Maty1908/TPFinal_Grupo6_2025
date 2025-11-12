@@ -33,7 +33,7 @@ byte indice = 0;
 int numero_generado;
 int intentos = 1;
 
-// --- Funciones del teclado ---
+// Funciones del teclado
 char getKey() {
   char k = '\0';
   for (int r = 0; r < 4; r++) {
@@ -62,7 +62,7 @@ char getKeyOnce() {
   return '\0';
 }
 
-// --- LEDs ---
+// LEDs
 void apagarTodosLosLeds() {
   digitalWrite(LED_ROJO, LOW);
   digitalWrite(LED_AMARILLO, LOW);
@@ -78,7 +78,7 @@ void mostrarProximidad(int opcion) {
   else if (diferencia > 5) digitalWrite(LED_ROJO, HIGH);
 }
 
-// --- Canción de victoria ---
+// Canción de victoria
 void reproducirCancion() {
   struct Nota { int freq; int dur; };
   Nota melodia[] = {
@@ -102,7 +102,6 @@ void reproducirCancion() {
       delay(dur);
     } else {
       tone(BUZZER, freq);
-      // LEDs azul y amarillo alternados
       if (i % 2 == 0) {
         digitalWrite(LED_AZUL, HIGH);
         digitalWrite(LED_AMARILLO, LOW);
@@ -117,7 +116,7 @@ void reproducirCancion() {
   apagarTodosLosLeds();
 }
 
-// --- Canción de derrota (final más rápido) ---
+// Canción de derrota
 void reproducirPerder() {
   struct Nota { int freq; int dur; };
   Nota melodia[] = {
@@ -144,17 +143,15 @@ void reproducirPerder() {
     }
   }
 
-  // --- Efecto final GAME OVER más rápido ---
+  // GAME OVER
   lcd.clear();
   lcd.print("GAME OVER");
   for (int i = 0; i < 3; i++) {
     digitalWrite(LED_ROJO, HIGH);
-    delay(150);  // antes era 250 → ahora más rápido
+    delay(150);  
     digitalWrite(LED_ROJO, LOW);
     delay(150);
   }
-
-  // Beep grave final corto
   tone(BUZZER, 200, 300);
   delay(300);
   noTone(BUZZER);
@@ -162,7 +159,7 @@ void reproducirPerder() {
   apagarTodosLosLeds();
 }
 
-// --- Ultrasónico ---
+// Ultrasónico
 long medirDistancia() {
   digitalWrite(TRIGGER_PIN, LOW);
   delayMicroseconds(2);
@@ -174,7 +171,7 @@ long medirDistancia() {
   return distancia;
 }
 
-// --- Juego ---
+// Juego
 void siguienteIntento();
 void reiniciarJuego();
 
@@ -209,7 +206,6 @@ void reiniciarJuego() {
   lcd.setCursor(0,1); lcd.print("Num (10-20):");
 }
 
-// --- Setup ---
 void setup() {
   for (int i = 0; i < 4; i++) {
     pinMode(rows[i], OUTPUT);
@@ -238,7 +234,7 @@ void setup() {
   lcd.setCursor(0,1); lcd.print("Num (10-20):");
 }
 
-// --- Loop principal ---
+// Loop principal
 void loop() {
   char k = getKeyOnce();
 
