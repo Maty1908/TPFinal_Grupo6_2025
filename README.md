@@ -1,1 +1,6 @@
-aca hay que escribir el readme.md
+# Juego de adivinanza y medición con Arduino
+
+**Proyecto Final - Arduino**
+
+---
+
