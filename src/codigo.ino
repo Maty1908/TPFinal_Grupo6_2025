@@ -2,7 +2,7 @@
 #include <LiquidCrystal_I2C.h>
 #include <Keypad.h>
 
-// LCD
+// Display LCD
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 // Keypad
@@ -15,7 +15,7 @@ char keys[4][4] = {
   {'*', '0', '#', 'D'}
 };
 
-// LEDs
+// LED
 const int LED_ROJO = 12;
 const int LED_AMARILLO = 13;
 const int LED_AZUL = A1;
@@ -23,7 +23,7 @@ const int LED_AZUL = A1;
 // Buzzer
 #define BUZZER 3
 
-// Sensor ultrasónico
+// Sensor de ultrasonido
 const int TRIGGER_PIN = A2;
 const int ECHO_PIN = 2;
 
@@ -62,7 +62,7 @@ char getKeyOnce() {
   return '\0';
 }
 
-// LEDs
+// LED
 void apagarTodosLosLeds() {
   digitalWrite(LED_ROJO, LOW);
   digitalWrite(LED_AMARILLO, LOW);
@@ -78,7 +78,7 @@ void mostrarProximidad(int opcion) {
   else if (diferencia > 5) digitalWrite(LED_ROJO, HIGH);
 }
 
-// Canción de victoria
+// Canción cuando ganas
 void reproducirCancion() {
   struct Nota { int freq; int dur; };
   Nota melodia[] = {
@@ -116,7 +116,7 @@ void reproducirCancion() {
   apagarTodosLosLeds();
 }
 
-// Canción de derrota
+// Canción cuando perdes
 void reproducirPerder() {
   struct Nota { int freq; int dur; };
   Nota melodia[] = {
@@ -234,7 +234,6 @@ void setup() {
   lcd.setCursor(0,1); lcd.print("Num (10-20):");
 }
 
-// Loop principal
 void loop() {
   char k = getKeyOnce();
 
