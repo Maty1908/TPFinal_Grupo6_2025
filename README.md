@@ -72,4 +72,4 @@ El juego combina elementos de **entrada/salida digital, sensores, control por ti
 
 ---
 
-![Imagen del esquema eléctrico](media/nombre_de_tu_imagen.jpg)
+![Imagen del esquema eléctrico](media/esquemaelectrico.png)
