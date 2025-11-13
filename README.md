@@ -29,7 +29,7 @@ Este proyecto consiste en un **juego interactivo** desarrollado con **Arduino UN
 El sistema invita al usuario a **adivinar un número entre 10 y 20** utilizando un teclado matricial 4x4. A través de una **pantalla LCD** se muestran mensajes de ayuda, y mediante **LEDs de colores** el sistema indica qué tan cerca está la respuesta.
 
 Cuando el jugador acierta el número, el sistema:
-- Reproduce una **melodía de victoria ("La Marcha de Boca")** mediante un buzzer.
+- Reproduce una **melodía de victoria** mediante un buzzer.
 - Pasa a una **segunda etapa**, donde el jugador debe **colocar un objeto a una distancia del sensor ultrasónico** igual al número adivinado.
 - Si el jugador **no adivina** el número secreto se reproduce una melodía mostrando **Game Over** mediante la pantalla 
 
