@@ -87,11 +87,11 @@ El juego combina elementos de **entrada/salida digital, sensores, control por ti
 
 ## Imágenes o video demostrativo
 
-![Imagen de arduino](media/esquema_electrico.png)
+![Video Arduino](media/Video_Arduino.mp4)
 
 ---
 
-##  Licencia y créditos   //COMPLETAR 
+##  Licencia y créditos   // FALTA COMPLETAR 
 
 ---
 
