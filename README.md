@@ -71,5 +71,30 @@ El juego combina elementos de **entrada/salida digital, sensores, control por ti
 | **Alimentación** | 5V DC |
 
 ---
+## Esquema eléctrico / diagrama de conexiones
 
-![Imagen del esquema eléctrico](media/esquemaelectrico.png)
+![Imagen del esquema eléctrico](media/esquema_electrico.png)
+
+---
+
+## Máquina de estados (diagrama o explicación) //FALTA COMPLETAR
+
+---
+
+##  Instrucciones de uso y ejecución  //FALTA COMPLETAR
+
+---
+
+## Imágenes o video demostrativo
+
+![Imagen de arduino](media/esquema_electrico.png)
+
+---
+
+##  Licencia y créditos   //COMPLETAR 
+
+---
+
+
+
+
