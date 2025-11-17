@@ -78,11 +78,37 @@ El juego combina elementos de **entrada/salida digital, sensores, control por ti
 ---
 
 ## Máquina de estados (diagrama o explicación) //FALTA COMPLETAR
+**1. Inicio**
+- Se genera un número aleatorio.
+- Se muestra el primero intento para adivinar dicho numero sobre el keypad.
 
+**2. Ingreso de número**
+- El usuario escribe un valor entre 10 y 20.
+- Si es inválido, se solicita otro.
+
+**3. Evaluación**
+- Si es correcto, suena una señal sonora de victoria y se pasa al estado de juego de distancia con el sensor ultrasónico.
+- Si es incorrecto, se muestran pistas con leds y se avanza al siguiente intento.
+- Si no quedan intentos,se pasa al estado de derrota.
+
+**4. Juego de distancia con sensor ultrasónico**
+- El usuario debe ubicar un objeto a la distancia indicada por el numero aleatorio adivinado.
+- Una vez que coincide, se termina el juego.
+
+**5. Derrota**
+- Señal sonora y visual de derrota.
+- Muestra el número aleatorio generado por el keypad.
+- Reinicio del juego.
 ---
 
 ##  Instrucciones de uso y ejecución  //FALTA COMPLETAR
-
+1. Conectar y encender el Arduino.
+2. Esperar la pantalla que indica que comienza el primer intento.
+3. Ingresar un número entre 10 y 20 usando el keypad.
+4.Confirmar con # o borrar con *.
+5. Según la cercanía, los LEDs indicarán si estás lejos o cerca.
+6. Si acertás el número, esperar la canción y luego seguir la indicación del sensor ultrasónico para ubicar el objeto.
+7. Si fallás tres veces, el juego finalizará con una cancion y se reiniciará solo.
 ---
 
 ## Imágenes o video demostrativo
