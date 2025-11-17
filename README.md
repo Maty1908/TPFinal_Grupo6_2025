@@ -117,9 +117,16 @@ El juego combina elementos de **entrada/salida digital, sensores, control por ti
 
 ---
 
-##  Licencia y créditos   // FALTA COMPLETAR 
+##  Licencia y créditos  
 
----
+Autores (Grupo 6):
+*Manuel Alcoceba
+*Valentín Mokorel
+*Matías Miremont
+*Ramiro Arbelo
+
+Proyecto desarrollado por el Grupo 6 para la materia Laboratorio de Computación I, bajo la enseñanza de los docentes Pedro Iriso y Matías Gagliardo.
+Para los codigos y documentaciones presentadas se permite su uso educativo libre para cualquier persona que quiera manipularlo y asemejarlo a su gusto.
 
 
 
