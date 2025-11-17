@@ -126,7 +126,7 @@ Autores (Grupo 6):
 *Ramiro Arbelo
 
 Proyecto desarrollado por el Grupo 6 para la materia Laboratorio de Computación I, bajo la enseñanza de los docentes Pedro Iriso y Matías Gagliardo.
-Para los codigos y documentaciones presentadas se permite su uso educativo libre para cualquier estudiante que quiera manipularlo y asemejarlo a su gusto.
+Para los codigos y documentaciones presentadas se permite su libre uso educativo para cualquier estudiante que quiera manipularlo y asemejarlo a su gusto.
 
 
 
