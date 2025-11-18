@@ -77,7 +77,7 @@ El juego combina elementos de **entrada/salida digital, sensores, control por ti
 
 ---
 
-## Máquina de estados (diagrama o explicación) //FALTA COMPLETAR
+## Máquina de estados (diagrama o explicación)
 **1. Inicio**
 - Se genera un número aleatorio.
 - Se muestra el primero intento para adivinar dicho numero sobre el keypad.
@@ -101,11 +101,11 @@ El juego combina elementos de **entrada/salida digital, sensores, control por ti
 - Reinicio del juego.
 ---
 
-##  Instrucciones de uso y ejecución  //FALTA COMPLETAR
+##  Instrucciones de uso y ejecución 
 1. Conectar y encender el Arduino.
 2. Esperar la pantalla que indica que comienza el primer intento.
 3. Ingresar un número entre 10 y 20 usando el keypad.
-4.Confirmar con # o borrar con *.
+4. Confirmar con '#' o borrar con '*'.
 5. Según la cercanía, los LEDs indicarán si estás lejos o cerca.
 6. Si acertás el número, esperar la canción y luego seguir la indicación del sensor ultrasónico para ubicar el objeto.
 7. Si fallás tres veces, el juego finalizará con una cancion y se reiniciará solo.
