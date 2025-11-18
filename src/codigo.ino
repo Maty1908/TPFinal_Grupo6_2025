@@ -143,7 +143,7 @@ void reproducirPerder() {
     }
   }
 
-  // GAME OVER
+  // Mensaje GAME OVER
   lcd.clear();
   lcd.print("GAME OVER");
   for (int i = 0; i < 3; i++) {
@@ -171,7 +171,7 @@ long medirDistancia() {
   return distancia;
 }
 
-// Juego
+// Juego 
 void siguienteIntento();
 void reiniciarJuego();
 
